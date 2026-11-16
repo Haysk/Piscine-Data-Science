@@ -9,7 +9,7 @@ CREATE TABLE data_2022_oct (
   user_session uuid
 );
 
-copy data_2022_oct FROM 'customer/data_2022_oct.csv' WITH (FORMAT csv, HEADER true)
+COPY data_2022_oct FROM '/home/adylewsk/Downloads/subject/customer/data_2022_oct.csv' WITH (FORMAT csv, HEADER true);
 
 CREATE TABLE data_2022_nov (
   event_time timestamptz,
